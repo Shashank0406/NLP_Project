@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import logging
 
-logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 
 project_name = 'Hate'
@@ -16,12 +16,13 @@ list_of_Files = [
     f"{project_name}/configuration/__init__.py",
     f"{project_name}/configuration/gcloud_syncer.py",
     f"{project_name}/constants/__init__.py",
+    f"{project_name}/entity/__init__.py",
     f"{project_name}/entity/config_entity.py",
     f"{project_name}/entity/artifact_entity.py",
     f"{project_name}/exception/__init__.py",
     f"{project_name}/logger/__init__.py",
     f"{project_name}/pipeline/__init__.py",
-    f"{project_name}/pipeline/train_pipeline",
+    f"{project_name}/pipeline/train_pipeline.py",
     f"{project_name}/pipeline/predition_pipeline.py",
     f"{project_name}/ml/__init__.py",
     f"{project_name}/ml/model.py",
